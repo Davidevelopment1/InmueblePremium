@@ -1,0 +1,11 @@
+<div class="footer-form">
+					<h2>Contactanos</h2>
+					<form>
+						<input class="campo" type="text" placeholder="Nombre Completo">
+						<input class="campo" type="id" placeholder="Cedula">
+						<input class="campo" type="phone" placeholder="Telefono">
+						<input class="campo" type="email" placeholder="Correo Electronico">
+						<textarea class="campo" cols="30" rows="10"></textarea>
+						<input class="btn-2" type="submit" value="enviar">
+					</form>
+				</div>
