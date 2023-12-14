@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rethink+Sans&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+}
+
+
+body{
+	font-family: 'Bebas Neue', sans-serif;
+	background-color:#09080D;
+	
+}
+p{
+	font-family: Arial, Hervetica, sans-serif;
+}
+.container{
+	max-width:1200px;
+	margin: 0 auto;
+}
+.header{
+	background-image:linear-gradient(
+		rgba(0,0,0,0.5),
+		rgba(0,0,0,0.5)),
+		url(images/menu3.png);
+		background-position:center center;
+		background-repeat: no-repeat;
+		background-size:cover;
+		min-height:70vh;
+		display:flex;
+		align-items: center;
+}
+.menu{
+	position:absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	color: #FFFDFC;
+	font-size: 25px;
+}
+.menu .navbar ul li{
+	position: relative;
+	float: left;
+}
+
+.menu .navbar ul li a {
+	font-size:20px;
+	padding:20px;
+	color:#FFFDFC;
+	display: block;
+}
+.menu .navbar ul li a:hover{
+	color:#B7975B;
+}
+
+#menu {
+	display:none;
+}
+
+.menu-icono {
+	width: 25px;
+}
+
+.menu label{
+	cursor: pointer;
+	display: none;
+}
+
+.header-txt{
+	width:100%;
+}
+.header-txt h1{
+	font-size:50px;
+	line-height:50px;
+	color:#FEFCFB;
+	margin-bottom: 15px;
+}
+
+.header-txt p {
+	font-size:16px;
+	color: #E0E0E0;
+	margin-bottom: 15px;
+}
+
+.btn-1{
+	display: inline-block;
+	padding: 5px 40px;
+	background-color:#B7975B;
+	color:#FEFCFB;
+	border-radius: 25px;
+	font-size: 18px;
+}
+
+.btn-1:hover{
+	background-color:#a08450;
+}
+.direction{
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 0;
+}
+.direction p{
+	color:#FEFCFB;
+	font-size:16px;
+}
+
+.about {
+	padding: 100px 0;
+	display: flex;
+}
+
+.about-txt {
+	width: 50%;
+}
+
+.about-img{
+	width:50%;
+}
+
+.about-img img{
+	width: 450px;
+}
+
+h2{
+	font-size: 70px;
+	color:#FEFCFB;
+	margin-bottom: 15px;
+}
+
+.about-txt p{
+	font-size: 16px;
+	color:#E0E0E0;
+	margin-bottom: 35px;
+}
+
+.information {
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 0;
+}
+
+.information-1{
+	display: flex;
+	align-items: center;
+}
+
+.information-1 h3{
+	font-size: 70px;
+	color:#FEFCFB;
+}
+
+.information-1 p{
+	font-size: 16px;
+	color:#E0E0E0;
+	margin-left:15px;
+}
+
+.house{
+	display:flex;
+	justify-content: space-between;
+}
+.house-1 {
+	background-image:linear-gradient(
+	rgba(0,0,0,0.5),
+	rgba(0,0,0,0.5)),
+	url(images/imagen1.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	width:100%;
+	padding:25px;
+}
+.house-2 {
+	background-image:linear-gradient(
+	rgba(0,0,0,0.5),
+	rgba(0,0,0,0.5)),
+	url(images/imagen2.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	width:100%;
+	padding:25px;
+}
+.house-3 {
+	background-image:linear-gradient(
+	rgba(0,0,0,0.5),
+	rgba(0,0,0,0.5)),
+	url(images/imagen3.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	width:100%;
+	padding:25px;
+}
+.house-4 {
+	background-image:linear-gradient(
+	rgba(0,0,0,0.5),
+	rgba(0,0,0,0.5)),
+	url(images/imagen4.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	width:100%;
+	padding:25px;
+}
+.house-5 {
+	background-image:linear-gradient(
+	rgba(0,0,0,0.5),
+	rgba(0,0,0,0.5)),
+	url(images/imagen5.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 500px;
+	width:100%;
+	padding:25px;
+}
+
+.txt{
+	position: relative;
+}
+
+.txt span{
+	color: #87975B;
+	font-size: 35px;
+}
+.txt h3{
+	color:#FEFCFB;
+	font-size:35px;
+}
+
+.txt p{
+	font-size: 16px;
+	color:#E0E0E0;
+	position:absolute;
+	top: 400px;
+	left:0;
+	rotate: 270deg;
+}
+
+.footer{
+	padding: 100px 0 0 0;
+}
+
+.footer-content{
+	display: flex;
+}
+
+.footer-form{
+	width: 50%;
+}
+
+.footer-txt{
+	width:50%;
+}
+
+form{
+	display: flex;
+	width: 350px;
+	flex-direction: column;
+	margin-left: 200px;
+}
+
+.campo{
+	background-color: #201F23;
+	padding: 17px 35px;
+	outline: none;
+	color:#7E7E7E;
+	border:0;
+	margin-bottom:10px;
+}
+
+.campo::placeholder{
+	color:#7E7E7E;
+}
+.btn-2{
+	padding: 17px 35px;
+	border: 2px solid #87975B;
+	background-color: #87975B;
+	color:#FEFCFB;
+	border-radius: 25px;
+	text-transform: uppercase;
+}
+
+.footer-txt h3{
+	color:#FEFCFB;
+	font-size: 35px;
+	margin: 0 100px 20px 0;
+}
+
+.footer-txt p{
+	margin-bottom: 25px;
+	font-size: 18px;
+	color:#E0E0E0;
+}
+
+.footer-2 p{
+	padding: 50px 0;
+	text-align: center;
+	font-align: 16px;
+	color: #E0E0E0;
+}
+
+@media(max-width:991px){
+	
+	.menu{
+		padding:30px;
+	}
+	
+	.menu label{
+		display: initial;
+	}
+	
+	.menu .navbar{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		right: 0;
+		background-color: #09080D;
+		display: none;
+	}
+	
+	.menu .navbar ul li{
+		width: 100%;
+	}
+	
+	#menu:checked ~ .navbar{
+		display: initial;
+	}
+	
+	.header{
+		min-height: 0vh;
+	}
+	
+	.header-content{
+		padding: 100px 30px;
+	}
+	
+	.header-txt{
+		width: 100%;
+		text-align: center;
+	}
+	
+	.header-txt h1{
+		font-size: 70px;
+		line-height: 80px;
+	}
+	
+	.direction{
+		flex-direction: column;
+		text-align: center;
+		padding: 30px;
+	}
+	
+	.padding p{
+		margin-bottom: 10px;
+	}
+	
+	.about{
+		padding: 0 30px 30px 30px;
+		flex-direction: column;
+	}
+	.about-txt{
+		width: 100%;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+	
+	.about-img{
+		width:100%;
+		order:2;
+		text-align:center;
+	}
+	
+	.about-img img{
+		width: 300px;
+	}
+	
+	.information {
+		padding: 30px;
+		flex-direction: column;
+		margin-left: 80px;
+	}
+	
+	.house{
+		flex-direction: column;
+	}
+	
+	.footer{
+		padding: 30px 30px 0 30px;
+	}
+	
+	.footer-content{
+		flex-direction: column;
+	}
+	
+	.footer-form{
+		width: 100%;
+		text-align: center;
+	}
+	
+	.footer-txt{
+		width:100%;
+		text-align: center;
+	}
+	
+	.footer-txt h3{
+		margin: 0 0 20px 0;
+	}
+	
+	form{
+		width:100%;
+		margin: 0 0 25px 0;
+	}
+	
+	.footer-2 p{
+		text-align: center;
+	}
+	
+}
