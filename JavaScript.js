@@ -1,4 +1,6 @@
 //Obtener los elementos donde se mostraran los datos
+document.addEventListener('DOMContentLoaded', function(){
+
 const clientesElement = document.getElementById('clientes');
 const apartamentosElement = document.getElementById('apartamentos');
 const condominiosElement = document.getElementById('condominios');
@@ -14,3 +16,4 @@ fetch('Archivo.txt')
 		condominiosElement.textContent = values[2];
 	})
 	.catch(error => console.error('Error al obtener el archivo: ', error));
+});
