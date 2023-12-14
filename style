@@ -43,9 +43,14 @@ p{
 	justify-content: space-between;
 }
 .logo{
-	color: #FFFDFC;
-	font-size: 25px;
+	position:absolute;
+	left:-60px;
+	top:-100px;
+	z-index:1000;
+	width:300px;
+	height:300px;
 }
+
 .menu .navbar ul li{
 	position: relative;
 	float: left;
