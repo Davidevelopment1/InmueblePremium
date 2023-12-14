@@ -1,0 +1,2 @@
+clientes,apartamentos,condominios
+10,20,5
