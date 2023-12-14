@@ -12,7 +12,8 @@
 	<header class="header">
 		
 		<div class="menu container">
-			<a href="#" class="logo">LOGO</a>
+			<a href="#"><img src="images/Logo1.png" alt="" class="logo"></a>
+			<a href="#" class="logo-txt"></a>
 			<input type="checkbox" id="menu" />
 			<label for="menu">
 				<img src="images/menu.png" alt="menu principal" style="width: 50px; height: 50px;">		
@@ -31,9 +32,11 @@
 			<div class="header-txt">
 				<h1>ADMINISTRACION DE APARTAMENTOS Y COMDOMINIOS</h1>
 				<P>
-				Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-				Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-				when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+				¡Bienvenidos a Inmuebles Premium! Somos más que una empresa de administración de propiedades. 
+				En cada apartamento, condominio o espacio que gestionamos, ofrecemos un servicio de excelencia. 
+				Desde el mantenimiento impecable hasta la atención personalizada a cada cliente, nos dedicamos a maximizar el valor de cada propiedad. 
+				Nuestro compromiso es crear comunidades vibrantes, seguras y cómodas para todos nuestros residentes, 
+				asegurando una experiencia inigualable en el cuidado y gestión de sus hogares.
 				</P>
 				<a href="#" class="btn-1">Informacion</a>
 			</div>
@@ -41,10 +44,10 @@
 	</header>
 	
 		<section class="direction container">
-			<p>Santo Domingo</p>
+			<p>C/Jose Francisco Mejia, El Almirante</p>
 			<p>Santo Domingo Este, Distrito Nacional</p>
-			<p>Info@info.com</p>
-			<p>+8090000000</p>
+			<p>InmueblesPremiumASF@gmail.com</p>
+			<p>+8496351669</p>
 		</section>
 		
 		<section class="about container">
