@@ -12,3 +12,8 @@
 
 
 ¡Bienvenidos a Inmuebles Premium! Somos más que una empresa de administración de propiedades. En cada apartamento, condominio o espacio que gestionamos, ofrecemos un servicio de excelencia. Desde el mantenimiento impecable hasta la atención personalizada a cada cliente, nos dedicamos a maximizar el valor de cada propiedad. Nuestro compromiso es crear comunidades vibrantes, seguras y cómodas para todos nuestros residentes, asegurando una experiencia inigualable en el cuidado y gestión de sus hogares.
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<div class="footer-txt">
+  <h3><i class="fas fa-phone"></i> +8090000000</h3>
+  <!-- El resto de tu contenido -->
+</div>
