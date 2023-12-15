@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function(){
 			alert('Por favor, completar todos los campos del formulario.');
 			return; //Evitar que se siga ejecutando codigo.
 		}
-		guardarEnIndexedDB({nombre,cedula,telefono,email,mensaje});
+		guardarEnIndexedDB({nombre,cedula,telefono,correo,mensaje});
 		limpiarFormulario();
 	});
 
