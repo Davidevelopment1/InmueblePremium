@@ -53,14 +53,14 @@ document.addEventListener('DOMContentLoaded', function(){
 		const nombre = document.getElementById('nombre').value;
 		const cedula = document.getElementById('cedula').value;
 		const telefono = document.getElementById('telefono').value;
-		const correo = document.getElementById('correo').value;
+		const email = document.getElementById('email').value;
 		const mensaje = document.getElementById('mensaje').value;
 
-		if(nombre ==='' || cedula ==='' || telefono ==='' || correo ===''){
+		if(nombre ==='' || cedula ==='' || telefono ==='' || email ===''){
 			alert('Por favor, completar todos los campos del formulario.');
 			return; //Evitar que se siga ejecutando codigo.
 		}
-		guardarEnIndexedDB({nombre,cedula,telefono,correo,mensaje});
+		guardarEnIndexedDB({nombre,cedula,telefono,email,mensaje});
 		limpiarFormulario();
 	});
 
@@ -84,7 +84,7 @@ function limpiarFormulario(){
 	document.getElementById('nombre').value = '';
 	document.getElementById('cedula').value = '';
 	document.getElementById('telefono').value = '';
-	document.getElementById('correo').value = '';
+	document.getElementById('email').value = '';
 	document.getElementById('mensaje').value = '';
 }
 function mostrarMensaje(){
