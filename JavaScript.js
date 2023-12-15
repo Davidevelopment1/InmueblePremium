@@ -70,7 +70,7 @@ function guardarEnIndexedDB (datos){
 	const requestAdd = objectStore.add(datos);
 
 	requestAdd.onsuccess = function (event){
-		console.log('Datos guardados en el IndexedDB correctamente.');	c
+		console.log('Datos guardados en el IndexedDB correctamente.');
 		mostrarMensaje();
 	};
 	requestAdd.onerror = function(event){
