@@ -45,5 +45,49 @@ request.onupgradeneeded = function (event){
 	console.log('Base de datos creada y lista para su uso');
 };
 
+document.addEventListener('DOMContentLoaded', function(){
+	const contacForm = document.getElementById('contactForm');
+	contacForm.addEventListener('submit', function(event){
+		event.preventDefault();
 
+		const nombre = document.getElementById('nombre').value;
+		const cedula = document.getElementById('cedula').value;
+		const telefono = document.getElementById('telefono').value;
+		const correo = document.getElementById('correo').value;
+		const mensaje = document.getElementById('mensaje').value;
+
+		if(nombre ==='' || cedula ==='' || telefono ==='' || correo ===''){
+			alert('Por favor, completar todos los campos del formulario.');
+			return; //Evitar que se siga ejecutando codigo.
+		}
+		guardarEnIndexedDB({nombre,cedula,telefono,email,mensaje});
+		limpiarFormulario();
+	});
+
+function guardarEnIndexedDB (datos){
+	const transaction = db.transaction(['datos'], 'readwrite');
+	const objectStore = transaction.objectStore('datos');
+	const requestAdd = objectStore.add(datos);
+
+	requestAdd.onsuccess = function (event){
+		console.log('Datos guardados en el IndexedDB correctamente.');	c
+		mostrarMensaje();
+	};
+	requestAdd.onerror = function(event){
+		console.error('Error al guardar los datos en IndexedDB:', event.target.error);
+	};
+}
+	
+});
+
+function limpiarFormulario(){
+	document.getElementById('nombre').value = '';
+	document.getElementById('cedula').value = '';
+	document.getElementById('telefono').value = '';
+	document.getElementById('correo').value = '';
+	document.getElementById('mensaje').value = '';
+}
+function mostrarMensaje(){
+	alert('Datos enviados exitosamente.');
+}
 
