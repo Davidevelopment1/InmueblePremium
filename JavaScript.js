@@ -17,3 +17,33 @@ fetch('Archivo.txt')
 	})
 	.catch(error => console.error('Error al obtener el archivo: ', error));
 });
+
+//Crear base de datos en IndexedDB
+let db;
+
+const request = window.indexedDB.open('Contactos',1);
+
+request.onerror = function(event){
+	console.log('Error al abrir la base de datos: ', event.target.error);
+};
+
+request.onsuccess = function(event){
+	db = event.target.result;
+	console.log('Base de datos abierta correctamente!');
+};
+
+request.onupgradeneeded = function (event){
+	db = event.target.result;
+	const objectStore = db.createObjectStore('datos',{KeyPath: 'id', autoIncrement: true});
+
+	objectStore.createIndex('nombre','nombre',{unique:false});
+	objectStore.createIndex('cedula','cedula',{unique:false});
+	objectStore.createIndex('telefono','telefono',{unique:false});
+	objectStore.createIndex('email','email',{unique:false});
+	objectStore.createIndex('mensaje','mensaje',{unique:false});
+
+	console.log('Base de datos creada y lista para su uso');
+};
+
+
+
