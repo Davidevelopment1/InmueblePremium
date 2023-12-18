@@ -19,7 +19,7 @@ fetch('Archivo.txt')
 });
 
 //Crear base de datos en IndexedDB
-let db;
+/*let db;
 
 const request = window.indexedDB.open('Contactos',1);
 
@@ -90,4 +90,4 @@ function limpiarFormulario(){
 function mostrarMensaje(){
 	alert('Datos enviados exitosamente.');
 }
-
+*/
