@@ -19,7 +19,11 @@ fetch('Archivo.txt')
 });
 
 // Función para verificar campos vacíos antes de enviar el formulario
-function verificarCampos() {
+const form = document.getElementById('contactForm'); // Reemplaza 'contactForm' con tu ID de formulario
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Evitar el envío predeterminado del formulario
+
   const campos = document.querySelectorAll('.campo');
   let camposVacios = [];
 
@@ -31,44 +35,8 @@ function verificarCampos() {
 
   if (camposVacios.length > 0) {
     alert(`Por favor, completa los siguientes campos: ${camposVacios.join(', ')}`);
-    return false; // Evita el envío del formulario si hay campos vacíos
-  }
-
-  return true; // Permite el envío del formulario si no hay campos vacíos
-}
-
-// Agregar un evento al formulario cuando se envía
-const form = document.getElementById('contactForm'); // Reemplaza 'contactForm' con tu ID de formulario
-
-form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Evitar el envío predeterminado del formulario
-
-  // Verifica los campos antes de enviar el formulario
-  const camposValidos = verificarCampos();
-
-  // Si todos los campos están completos, envía el formulario
-  if (camposValidos) {
-    this.submit();
-  }
-});
-// Función para mostrar una alerta cuando el formulario se ha enviado
-function mostrarAlertaEnvio() {
-  alert('¡Formulario enviado con éxito!');
-}
-
-// Agregar un evento al formulario cuando se envía
-const form = document.getElementById('contactForm'); // Reemplaza 'contactForm' con tu ID de formulario
-
-form.addEventListener('submit', function(event) {
-  event.preventDefault(); // Evitar el envío predeterminado del formulario
-
-  // Verifica los campos antes de enviar el formulario
-  const camposValidos = verificarCampos();
-
-  // Si todos los campos están completos, envía el formulario y muestra la alerta
-  if (camposValidos) {
-    this.submit();
-    mostrarAlertaEnvio(); // Muestra la alerta de envío exitoso
+  } else {
+    this.submit(); // Envía el formulario si no hay campos vacíos
   }
 });
 
